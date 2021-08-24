@@ -24,4 +24,4 @@ urlpatterns = [
     path('', views.welcome, name = 'welcome'),
     path('home', views.home, name = 'home'),
     path('analyze', views.analyze, name = 'analyze')
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]

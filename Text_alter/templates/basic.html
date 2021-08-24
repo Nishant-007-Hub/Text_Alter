@@ -14,12 +14,11 @@
 </head>
 
 <body>
-    {% load static %}
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color:lightgreen;">
-        {% comment %} <img alt="icon" height="70" onclick="document.location='/'"
-            src="https://img-premium.flaticon.com/png/128/2476/premium/2476980.png?token=exp=1628171257~hmac=f8ca7a231216b51644dab3438a54d693"
-            {% endcomment %} {% comment %} <a href='{%static "images\1.jpg" %}'> {% endcomment %}
-        <img src='/media/{{text.jpg}}' width="100" height="100" alt="no img">
+        
+        {% load static %}
+        <img src="{% static 'text.jpg' %}" onclick="document.location='/'" height="80" width="80" alt="Text_ulter img"srcset="">
+
         <a class="navbar-brand" href="/" style="padding:5px;">Text Alter</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
